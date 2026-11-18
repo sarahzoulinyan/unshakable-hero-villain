@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Escolha seu destino - Herói ou Vilão">
-  <title>Portal da Escolha</title>
+  <title>Portal of Choice</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
@@ -483,7 +483,7 @@
     <div class="loader">
       <div class="loader-inner"></div>
     </div>
-    <p class="loading-text">Carregando o destino...</p>
+    <p class="loading-text">Loading your destiny...</p>
     <div class="progress-container">
       <div class="progress-bar"></div>
     </div>
@@ -498,8 +498,8 @@
   <!-- Conteúdo principal -->
   <main class="portal-container">
     <div class="portal-header">
-      <h1 class="portal-title">ESCOLHA SEU <span class="title-accent">DESTINO</span></h1>
-      <p class="portal-subtitle">Uma decisão que definirá seu caminho para sempre. O equilíbrio depende de sua escolha.</p>
+      <h1 class="portal-title">CHOOSE YOUR <span class="title-accent">DESTINY</span></h1>
+      <p class="portal-subtitle">One decision will define your path forever. The balance depends on your choice.</p>
     </div>
 
     <div class="choice-grid">
@@ -509,13 +509,13 @@
           <div class="card-icon">
             <i class="fas fa-shield-alt"></i>
           </div>
-          <h2>GUARDIÃO DA LUZ</h2>
+          <h2>GUARDIAN OF LIGHT</h2>
         </div>
         <div class="character-image hero-image"></div>
         <div class="card-content">
-          <p>Aqueles que escolhem o caminho da luz se tornam defensores da justiça e protetores dos inocentes. Sua coragem ilumina até as trevas mais profundas.</p>
+          <p>Those who choose the path of light become defenders of justice and protectors of the innocent. Their courage illuminates even the deepest darkness.</p>
           <a href="heroi-vilao/heroi.html" class="choice-btn">
-            <span>Escolher a Luz</span>
+            <span>Choose the Light</span>
             <i class="fas fa-arrow-right"></i>
           </a>
         </div>
@@ -527,13 +527,13 @@
           <div class="card-icon">
             <i class="fas fa-skull"></i>
           </div>
-          <h2>SENHOR DAS TREVAS</h2>
+          <h2>LORD OF DARKNESS</h2>
         </div>
         <div class="character-image villain-image"></div>
         <div class="card-content">
-          <p>O poder das trevas oferece liberdade das restrições da moralidade. Aqueles que abraçam a escuridão descobrem força inimaginável.</p>
+          <p>The power of darkness offers freedom from the restraints of morality. Those who embrace it discover unimaginable strength.</p>
           <a href="heroi-vilao/vilao.html" class="choice-btn">
-            <span>Abraçar as Trevas</span>
+            <span>Embrace the Darkness</span>
             <i class="fas fa-arrow-right"></i>
           </a>
         </div>
@@ -543,13 +543,13 @@
     <!-- Botão de escolha aleatória -->
     <div class="random-choice-container">
       <button id="randomChoiceBtn" class="random-choice-btn">
-        <span>Deixar o destino decidir</span>
+        <span>Let destiny decide</span>
         <i class="fas fa-dice"></i>
       </button>
     </div>
 
     <div class="portal-footer">
-      <p>Esta decisão moldará seu destino para sempre. Escolha com sabedoria.</p>
+      <p>This decision will shape your destiny forever. Choose wisely.</p>
     </div>
   </main>
 
@@ -593,7 +593,7 @@
         // Efeito visual
         randomBtn.disabled = true;
         const originalText = randomBtn.querySelector('span').textContent;
-        randomBtn.querySelector('span').textContent = 'Decidindo destino...';
+        randomBtn.querySelector('span').textContent = 'Choosing your destiny...';
         randomBtn.querySelector('i').classList.add('fa-spin');
         
         // Cria efeito de piscar nos cards
